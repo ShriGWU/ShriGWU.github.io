@@ -3,15 +3,21 @@ import { useState } from 'react'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+
+  const scrollTo = (id: string) => {
+    const el = document.getElementById(id)
+    if (el) el.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
-    <header className="sticky top-0 z-40 bg-gradient-to-b from-slate-900/80 to-transparent backdrop-blur">
+    <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="#" className="font-mono text-sm text-emerald-300">AI × Finance Lab</a>
+        <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="font-mono text-sm text-emerald-600">AI × Finance Lab</button>
         <nav className="hidden md:flex gap-4 items-center">
-          <a href="#projects" className="text-sm hover:underline">Projects</a>
-          <a href="#experience" className="text-sm hover:underline">Experience</a>
-          <a href="#contact" className="text-sm hover:underline">Contact</a>
-          <a href="/resume.pdf" className="ml-3 px-3 py-1 rounded bg-emerald-500 text-slate-900 text-sm">Resume</a>
+          <button onClick={() => scrollTo('projects')} className="text-sm text-slate-700">Projects</button>
+          <button onClick={() => scrollTo('experience')} className="text-sm text-slate-700">Experience</button>
+          <button onClick={() => scrollTo('contact')} className="text-sm text-slate-700">Contact</button>
+          <button onClick={() => window.open('/Shrishail_Terni_Updated_CV.pdf', '_blank')} className="ml-3 px-3 py-1 rounded bg-emerald-600 text-white text-sm">Resume</button>
         </nav>
         <button className="md:hidden p-2" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,9 +27,10 @@ export default function Navbar() {
       </div>
       {open && (
         <div className="md:hidden px-4 pb-4">
-          <a href="#projects" className="block py-2">Projects</a>
-          <a href="#experience" className="block py-2">Experience</a>
-          <a href="#contact" className="block py-2">Contact</a>
+          <button onClick={() => { setOpen(false); scrollTo('projects') }} className="block w-full text-left py-2">Projects</button>
+          <button onClick={() => { setOpen(false); scrollTo('experience') }} className="block w-full text-left py-2">Experience</button>
+          <button onClick={() => { setOpen(false); scrollTo('contact') }} className="block w-full text-left py-2">Contact</button>
+          <button onClick={() => { setOpen(false); window.open('/Shrishail_Terni_Updated_CV.pdf', '_blank') }} className="block w-full text-left py-2">Resume</button>
         </div>
       )}
     </header>

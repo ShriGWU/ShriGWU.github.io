@@ -31,8 +31,8 @@ jobs:
         run: npm ci
 
       # For a USER SITE repo (<username>.github.io), keep BASE_PATH empty
-      - name: Build + Export
-        run: npm run build && npm run export
+      - name: Build (static export via output: export)
+        run: npm run build
         env:
           BASE_PATH: ""
           ASSET_PREFIX: ""

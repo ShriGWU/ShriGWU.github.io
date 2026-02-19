@@ -4,10 +4,8 @@ const assetPrefix = process.env.ASSET_PREFIX || basePath
 
 module.exports = {
   reactStrictMode: true,
-  experimental: {
-    appDir: true
-  },
   output: 'export',
   basePath,
-  assetPrefix
+  assetPrefix,
+  images: { unoptimized: true }
 }

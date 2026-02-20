@@ -62,7 +62,7 @@ export const profile = {
       description: 'Full-stack cloud-hosted system using a 3D-CNN on ABIDE MRI data to classify autism; deployed via a Flask API on GCP VM with GPU support.',
       date: 'Feb 2022 - May 2025',
       tags: ['Deep Learning', 'Medical'],
-      repo: '',
+      repo: 'https://github.com/ShriGWU/Autism_classification',
       demo: '',
       highlights: ['3D CNN preprocessing & augmentation', 'GCP GPU deployment with Flask API']
     },
@@ -71,7 +71,7 @@ export const profile = {
       description: 'Built and tuned ML models (Logistic Regression, Random Forest, XGBoost) to predict adverse drug events enabling proactive safety monitoring.',
       date: 'Aug 2024 - Nov 2024',
       tags: ['Data Science', 'Healthcare'],
-      repo: '',
+      repo: 'https://github.com/ShriGWU/Disease_Detection',
       demo: '',
       highlights: ['Tuned Random Forest achieving ~82% accuracy', 'Feature engineering & model evaluation for real-time risk assessment']
     },
@@ -80,7 +80,7 @@ export const profile = {
       description: 'Computer-vision pipeline and CNN models to detect age, gender, and emotion from facial images.',
       date: 'Feb 2024 - May 2024',
       tags: ['Computer Vision'],
-      repo: '',
+      repo: 'https://github.com/ShriGWU/Finance_projects/blob/main/Financial%20Analysis%20Report%20Portfolio%20Theory.pdf',
       demo: '',
       highlights: ['CNN model achieving ~85% accuracy', 'End-to-end preprocessing and augmentation']
     },
@@ -89,7 +89,7 @@ export const profile = {
       description: 'Performed regression modeling on California crime datasets to understand predictors and model performance.',
       date: 'Sept 2023 - Nov 2023',
       tags: ['Statistics'],
-      repo: '',
+      repo: 'https://github.com/ShriGWU/Finance_projects/blob/main/Regression_Analysis.pdf',
       demo: '',
       highlights: ['Adjusted R² ~75% using Minitab', 'Detailed feature selection and diagnostics']
     }

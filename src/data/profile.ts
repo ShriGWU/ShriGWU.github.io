@@ -58,6 +58,15 @@ export const profile = {
   ],
   projects: [
     {
+      name: 'RAG-based HR Policy Chatbot',
+      description: 'Engineered an end-to-end Retrieval-Augmented Generation (RAG) system that parses HR handbooks, chunks and embeds documents into a Chroma vector database, and serves citation-grounded answers through a FastAPI API and chatbot frontend.',
+      date: 'Jan 2026 - Feb 2026',
+      tags: ['AI', 'Company Project'],
+      repo: 'https://github.com/ShriGWU/RAG_HR_Policy',
+      demo: '',
+      highlights: ['Document parsing and chunking pipeline', 'Chroma vector database for semantic retrieval']
+    },
+    {
       name: 'Autism Detection from Brain MRI using Deep Learning',
       description: 'Full-stack cloud-hosted system using a 3D-CNN on ABIDE MRI data to classify autism; deployed via a Flask API on GCP VM with GPU support.',
       date: 'Feb 2022 - May 2025',
